@@ -7,7 +7,7 @@
     <title>Mark Brown - Portfolio</title>
     <meta name="description" content="Mark Brown - Portfolio">
     <meta name="author" content="Mark Brown">
-
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -16,28 +16,33 @@
     <header>
         <nav>
             <a href="index.html" title="Work">Work</a>
-            <a href="notWork.html" title="Not Work">Not Work</a>
-            <a href="index.html" title="MB">MB</a>
-            <a href="medium.html" title="Blog">Blog</a>
+            <a href="index.html" title="MB"><img src="img/logo.png" alt="MB Logo" width="80"></a>
             <a href="about.html" title="About">About</a>
         </nav>
     </header>
     <main>
         <ul id="projectTiles">
-            <li>
-                <h2>ADAM</h2>
-                <p>Student support system devised during startup incubator</p>
+            <li id="adamTile" style="background-image: url(img/adam.png);">
+                <div>
+                    <h2>ADAM</h2>
+                    <p class="subheaderText">Student support system devised during startup incubator</p>
+                </div>
             </li>
-            <li>
-                <h2>TRAVELCAST</h2>
-                <p>Holiday Destination Weather Forecaster</p>
+            <li id="travelcastTile" style="background-image: url(img/travelcast.png);">
+                <div>
+                    <h2>TRAVELCAST</h2>
+                    <p class="subheaderText">Holiday Destination Weather Forecaster</p>
+                </div>
             </li>
-            <li>
-                <h2>MAESTRO</h2>
-                <p>Musical Education Web App For Children</p>
+            <li id="maestroTile" style="background-image: url(img/maestro.png);">
+                <div>
+                    <h2>MAESTRO</h2>
+                    <p class="subheaderText">Musical Education Web App For Children</p>
+                </div>
             </li>
         </ul>
     </main>
-    <script src="js/scripts.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
