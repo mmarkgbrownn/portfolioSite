@@ -51,12 +51,12 @@ nav a {
 nav a:nth-child(2) {
     width: 80px;
     height: 80px;
-    background-image: url(../img/logo.png);
+    background-image: url(../img/logoHover.png);
     background-size: contain;
     margin-top: 10px;
 }
 nav a:nth-child(2):hover {
-    background-image: url(../img/logoHover.png);
+    background-image: url(../img/logo.png);
 }
 
 #projectTiles {
