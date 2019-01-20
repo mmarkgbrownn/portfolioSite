@@ -48,8 +48,15 @@ nav {
 nav a {
     line-height: 100px;
 }
-nav a img {
+nav a:nth-child(2) {
+    width: 80px;
+    height: 80px;
+    background-image: url(../img/logo.png);
+    background-size: contain;
     margin-top: 10px;
+}
+nav a:nth-child(2):hover {
+    background-image: url(../img/logoHover.png);
 }
 
 #projectTiles {
@@ -116,8 +123,13 @@ nav a img {
 }
 #aboutPage div ul li a {
     font-family: Arial, Helvetica, sans-serif;
-
 }
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  }
 
 @media only screen and (max-width: 500px) {
     #projectTiles li {
