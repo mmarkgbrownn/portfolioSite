@@ -72,7 +72,6 @@ nav a:nth-child(2):hover {
     height: 356px;
     text-align: center;
 }
-
 #projectTiles li div {
     max-width: 305px;
     margin: 0 auto;
@@ -125,13 +124,169 @@ nav a:nth-child(2):hover {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Project Page Stuff*/
+
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
     width: 70%;
     margin: auto;
   }
 
+.projectMain {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+#header {
+    width: 100%;
+    margin-top: 0;
+}
+#header img {
+    width: 100%;
+    max-height: 354px;
+}
+#header div {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 16px;
+}
+#header div h2 {
+    font-size: 32px;
+    padding-right: 16px;
+}
+
+#teamRole {
+    margin-top: 60px;
+    display: flex;
+}
+#teamRole ul {
+    width: 50%;
+}
+
+#designProcess img, #surveyInterview > img, #evaluation > img{
+    max-width: 900px;
+    width: 100%;
+    display: block;
+    margin: 24px auto 0 auto;
+}
+
+#surveyInterview p, #interviewContextStudy p{
+    margin-bottom: 40px;
+}
+#testing #myCarousel {
+    margin: 60px 0;
+}
+
+.imageScrollBox {
+    height: 450px;
+    width: auto;
+    overflow: scroll;
+    display: flex;
+}
+.imageScrollBox img {
+    height: 100%;
+    margin-right: 16px;
+}
+
+.twoImageBox {
+    width: 796px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.twoImageBox img {
+    margin-top: 16px;
+    max-width: 390px;
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 4px;
+}
+/* Generic Section Styles */
+section {
+    margin-top: 120px;
+}
+section h3 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+/* Footer styles */
+
+footer {
+    width: 100%;
+    margin-top: 120px;
+    background: #333A43;
+    color: white !important;
+}
+footer div:nth-child(2) {
+    background-color: #1F2630;
+    height: 60px;
+}
+footer div:nth-child(2) h2 {
+    color: white;
+    margin: 0 16px;
+    line-height: 60px;
+    font-size: 21px;
+}
+
+footer > div:nth-child(1) {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+footer > div:nth-child(1) > h2 {
+    padding-top: 40px;
+    font-size: 21px;
+    color: white;
+    margin-bottom: 24px;
+}
+
+#footProjectTiles {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#footProjectTiles li {
+    width: 314px;
+    height: 200px;
+    margin-right: 16px;
+    text-align: center;
+    background-size: cover;
+}
+#footProjectTiles li:hover {
+    cursor: pointer;
+}
+#footProjectTiles li h2, #footProjectTiles li p {
+    color: white;
+    margin: 8px 24px 0 24px;
+}
+#footProjectTiles li div {
+    position: relative;
+    top: 50%;
+    transform: translateY( -50%);
+}
+
 @media only screen and (max-width: 500px) {
+    .projectMain {
+        width: calc(100% - 32px);
+        margin: 0 16px;
+    }
+    .twoImageBox {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    .twoImageBox img {
+        height: auto;
+    }
+    #footProjectTiles {
+        flex-direction: column;
+    }
+    #footProjectTiles li:nth-child(1) {
+        margin-bottom: 24px;
+    }
     #projectTiles li {
         width: 100%;
     }

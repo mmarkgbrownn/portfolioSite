@@ -9,8 +9,6 @@
     <meta name="author" content="Mark Brown">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -23,11 +21,13 @@
             <a href="about.html" title="About">About</a>
         </nav>
     </header>
-    <main>
+    <main class="projectMain">
         <section id="header">
             <img id="projectHeader" src="img/header/adam.png">
-            <h2>ADAM</h2>
-            <p>Student support system</p>
+            <div>
+                <h2>ADAM</h2>
+                <p>Student support system</p>
+            </div>
             <p>51% of students in further education didn't seek help when they needed it. This statistic displays a problem for universities personal
                 help programmes, how can you help someone if you don't know they need help? We wanted to know how we can help these
                 individuals in need.</p>
@@ -64,19 +64,19 @@
                 <div class="carousel-inner" role="listbox">
             
                     <div class="item active">
-                        <img src="img/carousel/adamInsight1.png" alt="Chania" width="876" height="225">
+                        <img src="img/adam/interview1.png" width="876" height="225">
                         <div class="carousel-caption">
                         </div>
                     </div>
             
                     <div class="item">
-                        <img src="img/carousel/adamInsight1.png" alt="Chania" width="876" height="225">
+                        <img src="img/adam/interview2.png" width="876" height="225">
                         <div class="carousel-caption">
                         </div>
                     </div>
                 
                     <div class="item">
-                        <img src="img/carousel/adamInsight1.png" alt="Flower" width="876" height="225">
+                        <img src="img/adam/interview3.png" width="876" height="225">
                         <div class="carousel-caption">
                         </div>
                     </div>
@@ -102,9 +102,12 @@
                     create a complete product design in short time gave us an advantage over the other teams who only just specified the concepts
                     and financial details of the product.</p>
             <div class="imageScrollBox">
-                <img id="" src="img/maestro/header.jpg">
-                <img id="" src="img/maestro/header.jpg">
-                <img id="" src="img/maestro/header.jpg">
+                <img id="" src="img/adam/adamHome.png">
+                <img id="" src="img/adam/adamBlog.png">
+                <img id="" src="img/adam/adamArticle.png">
+                <img id="" src="img/adam/adamChat.png">
+                <img id="" src="img/adam/adamForum.png">
+                <img id="" src="img/adam/adamSearch.png">
             </div>
         </section>
         <section id="finacialModel">
@@ -120,8 +123,8 @@
                     create a complete product design in short time gave us an advantage over the other teams who only just specified the concepts
                     and financial details of the product.</p>
             <div class="twoImageBox">
-                <img id="projectHeader" src="img/maestro/header.jpg">
-                <img id="projectHeader" src="img/maestro/header.jpg">
+                <img id="projectHeader" src="img/adam/team.png">
+                <img id="projectHeader" src="img/adam/award.png">
             </div>
         </section>
         <section id="takeaway">
@@ -134,45 +137,29 @@
         </section>
     </main>
     <footer>
-        <h2>OTHER PROJECTS</h2>
-        <ul id="projectTiles">
-            <li>
-                <h2>ADAM</h2>
-                <p>Student support system devised during startup incubator</p>
-            </li>
-            <li>
-                <h2>TRAVELCAST</h2>
-                <p>Holiday Destination Weather Forecaster</p>
-            </li>
-        </ul>
         <div>
-            <h2>&copy;MARK BROWN 2019</h2>
+            <h2>OTHER PROJECTS</h2>
+            <ul id="footProjectTiles">
+                <li id="footerTravelcast"style="background-image: url(img/travelcast.png);">
+                    <div>
+                        <h2>Travelcast</h2>
+                        <p>Holiday Destination Weather Forecaster</p>
+                    </div>
+                </li>
+                <li id="footerMaestro" style="background-image: url(img/maestro.png);">
+                    <div>
+                        <h2>Maestro</h2>
+                        <p>Musical Education Web App For Children</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>&copy; MARK BROWN 2019</h2>
         </div>
     </footer>
-    <script>
-        $(document).ready(function(){
-            // Activate Carousel
-            $("#myCarousel").carousel();
-                
-            // Enable Carousel Indicators
-            $(".item1").click(function(){
-                $("#myCarousel").carousel(0);
-            });
-            $(".item2").click(function(){
-                $("#myCarousel").carousel(1);
-            });
-            $(".item3").click(function(){
-                $("#myCarousel").carousel(2);
-            });
-                
-            // Enable Carousel Controls
-            $(".left").click(function(){
-                $("#myCarousel").carousel("prev");
-            });
-            $(".right").click(function(){
-                $("#myCarousel").carousel("next");
-            });
-        });
-    </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
